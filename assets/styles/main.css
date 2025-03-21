@@ -1,0 +1,128 @@
+
+.page1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.lateral-esq {
+    display: flex;
+    justify-content: left;
+    width: 627px;
+    height: 100vh;
+    background: rgb(69,110,191);
+    background: linear-gradient(0deg, rgba(67,83,115,1) 0%, rgba(69,110,191,1)  50%);   
+}
+
+.lateral-esq img {
+    max-width: 100%;
+    margin: 280px 80px;
+}
+
+.contentHome {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fundoPageHome img {
+    margin: 350px 0 0 50px;
+    opacity: 0.2;
+}
+
+
+
+.menuHome {
+    display: flex;
+    margin: 40px 0 0 100px;
+    
+}
+
+.menuHome ul {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    list-style-type: none;
+    
+}
+
+
+
+.menuHome li {
+    width: 160px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #1848D9;
+    background-color: #B6C5F2;
+} 
+
+.menuHome li:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #456EBF;
+    transition: ease-in-out .2s;
+}
+
+.titleHome span {
+   margin: 0;
+   padding: 0;
+}
+
+.titleHome h1 {
+    font-size: 140px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 100px;
+    margin-top: 120px;
+    line-height: 1;
+}
+
+.titleHome h2 {
+    font-size: 40px;
+    margin-left: 140px;
+    font-weight: normal;
+    line-height: 3;
+    color: #456EBF;
+}
+
+.titleHome h1 .frontHome {
+    color: #435373;
+
+}
+.titleHome h1 .devHome {
+    color: #456EBF;
+}
+
+/* .checkMode{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 60px;
+    
+} */
+
+.checkMode input{
+    width: 80px;
+    height: 60px;
+    appearance: none;
+    background-color: #4b4b4b;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkMode input::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #8c8c8c;
+    top: 50%;
+    left: 0.3rem;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.checkMode input:checked::before {
+    left: 2.1rem;
+    background-color: #ffffff;
+}
