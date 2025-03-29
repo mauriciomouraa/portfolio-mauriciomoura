@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
 
     <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
 
@@ -17,26 +18,26 @@
     <meta name="description" content="Portfolio para fins didáticos.">
 </head>
 <body>
-    <div class="page1">
+    <div id="home" class="page1">
         <div class="lateral-esq">
-            <aside class="lateralaside">
-                <img src="assets/images/fundo-home.svg" alt="image">
-            </aside>
+            <img src="assets/images/fundo-home.svg" alt="image">
         </div>
 
         <section class="contentHome">
             
             <div class="menuHome">
                 <ul>
-                    <li class="home light">home</li>
-                    <li class="projetos light">projetos</li>
-                    <li class="sobre light">sobre</li>
-                    <li class="contato light">contato</li>
+                    <li data-target="home" class="home light">home</li>
+                    <li data-target="projetos" class="projetos light">projetos</li>
+                    <li data-target="sobre" class="sobre light">sobre</li>
+                    <li data-target="contato" class="contato light">contato</li>
                 </ul>
-        
+
                 <div class="checkMode">
-                    <input type="checkbox">
+                    <div class="iconSun"></div>
+                    <div class="iconMoon"></div>
                 </div>
+
             </div>
 
                 <div class="titleHome">
@@ -53,12 +54,126 @@
                 </div>
             
 
-            <div class="fundoPageHome">
-                <img src="assets/images/fundo-pages.svg" alt="image-fundo">
-            </div>
-
         </section>
     </div>
+
+    <div id="projetos" class="page2">
+        <div class="topGradi">
+            <h3>projetos</h3>
+        </div>
+        
+        <div class="projetos">
+            <ul>
+                <li class="gameMemory">
+                    <h4>jogo da memória</h4>
+                    <p>Foi desenvolvido um projeto simples
+                        para criar um jogo da memória utilizando
+                        HTML, CSS e Javascript. Assim, aplicando
+                        os conhecimentos adquiridos 
+                        sobre as tecnologias.</p>
+                    <span class="butaoLerMais">Ler Mais &#11106;</span>
+                </li>
+                <li class="pokedex">
+                    <h4>pokedéx</h4>
+                    <p>Nesse projeto foi criado uma pokedéx
+                        utilizando fetch do Javascript para realizar
+                        requisições na pokeapi e mostrar informações dos pokemons iniciais. 
+                        Além disso, foi
+                        criado um model para mostrar os
+                        detalhes adicionais.</p>
+                    <span class="butaoLerMais">Ler Mais &#11106;</span>
+                </li>
+                <li class="simuPiano">
+                    <h4>simulador de piano</h4>
+                    <p>Um projeto simples mas aplicado mais
+                        uma vez os conceitos de HTML, CSS e Javascript. Onde o piano pode ser
+                         tocado usando o clique
+                        do mouse ou diretamente pelo teclado.</p>
+                    <span class="butaoLerMais">Ler Mais &#11106;</span>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="botGradi"></div>
+    </div>
+
+    <div id="sobre" class="page3">
+        <div class="topGradi">
+            <h3>sobre</h3>
+            <h3>skills</h3>
+        </div>
+        
+        <div class="page3Content">
+            <div class="sobre">
+                <p>Eu sou Maurício Moura, apaixonado por tecnologia e 
+                    com um grande interesse em criar interfaces digitais. 
+                    Atualmente, estou aprofundando meus conhecimentos em HTML, 
+                    CSS e JavaScript.</p>
+                
+                <img src="assets/images/profile-photo.png" alt="image">
+            </div>
+
+            <div class="skills">
+                <ul class="textoSkill">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>js</li>
+                    <li>linux</li>
+                    <li>git</li>
+                    <li>py</li>
+                </ul>
+                <ul class="barraSkill">
+                    <li class="html-bar"></li>
+                    <li class="css-bar"></li>
+                    <li class="js-bar"></li>
+                    <li class="linux-bar"></li>
+                    <li class="git-bar"></li>
+                    <li class="py-bar"></li>
+                </ul>
+                <ul  class="valorSkill">
+                    <li>85%</li>
+                    <li>72%</li>
+                    <li>75%</li>
+                    <li>65%</li>
+                    <li>25%</li>
+                    <li>10%</li>
+                </ul>
+                
+            </div>
+        </div> 
+        
+        <div class="botGradi"></div>
+    </div>
+
+    <div id="contato" class="page4">
+            <h3>contato</h3>
+            <ul>
+                <li class="email">
+                    <a href="mailto:mauricioalb.moura@gmail.com" target="_blank">
+                        <img class="imgEmail" src="assets/images/icons-contato/email.png" alt="Email">
+                    </a>
+                </li>
+                <li class="whatsapp">
+                    <a href="https://api.whatsapp.com/send?phone=5588999033345" target="_blank">
+                        <img src="assets/images/icons-contato/whatsapp.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/mauricioamoura/" target="_blank">
+                        <img src="assets/images/icons-contato/linkedin.png" alt="Linkedin">
+                    </a>
+                </li>
+                <li class="github">
+                    <a href="https://github.com/mauriciomouraa" target="_blank">
+                        <img src="assets/images/icons-contato/github.png" alt="Github">
+                    </a>
+                </li>
+        </ul>
+            
+
+    </div>
     
+
+    <script src="assets/scripts/main.js" defer></script>
 </body>
 </html>

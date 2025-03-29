@@ -1,0 +1,28 @@
+/* Responsividade */
+
+@media screen and (max-width: 1440px) {
+    .lateral-esq {
+        width: 19.188rem;
+    }
+    .checkMode {
+        margin: 0 1rem 0 4rem;
+    }
+    .menuHome {
+        margin: 40px 0 0 20px;
+    }
+    .page1 {
+        background-size: 22rem;
+    }
+    .page2 {
+        font-size: 1rem;
+    }
+    .page2 li {
+        width: 20rem;
+        margin-inline: 2.5rem 2.5rem;
+    }
+    .page2 li h4 {
+        font-size: 2.3rem;
+        margin: 2rem 0 1rem 0;
+    }
+}
+
