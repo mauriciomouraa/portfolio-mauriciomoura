@@ -18,9 +18,8 @@
     justify-content: center;
     width: 39.188rem;
     height: 100vh;
-    background: rgb(69,110,191);
-    background: linear-gradient(0deg, rgba(69,110,191,1) 0%, rgba(182, 197, 242, 1)  50%);  
-     
+    background: rgb(69,110,191); 
+    background: linear-gradient(0deg, rgba(182, 197, 242, 1) 0%, rgba(69,110,191,1)  50%);  
 }
 
 .lateral-esq.dark {
@@ -40,8 +39,7 @@
 
 .menuHome {
     display: flex;
-    margin: 40px 0 0 100px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -53,6 +51,7 @@
     list-style-type: none;
     text-decoration: none;
     color: inherit;
+    border: solid .2px #ffffff;
 }
 
 html {
@@ -129,6 +128,7 @@ html {
     background-color: #B6C5F2;
     cursor: pointer;
     position: relative;
+    border: solid 0.1px #ffffff;
     
 }
 
@@ -177,8 +177,30 @@ html {
     
 }
 
+.iconsHome {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    margin-right: 80px;
+}
+
+.iconsHome img {
+    height: 2.2rem;
+    margin: 10px 20px 20px 0;
+
+}
+
+.iconsHome img:hover {
+    transform: scale(1.1);
+}
+
 .page2, .page3  {
+    position: relative;
+    z-index: 0;
     width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
     background-image: url('../images/fundo-pages-opa.svg'), url('../images/fundo-pages-opa.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: top right, bottom left;
@@ -186,8 +208,6 @@ html {
 }
 
 .page2.dark, .page3.dark {
-    position: relative;
-    z-index: -1;
     background-color: #435373;
     background-image: url('../images/fundo-pages-opa-dark.svg'), url('../images/fundo-pages-opa-dark.svg');
 }
@@ -224,7 +244,7 @@ html {
     position: relative;
     z-index: -1;
     height: 6rem;
-    background: linear-gradient(0deg, rgba(182, 197, 242, 1) 0%, rgba(255, 255, 255, 1) 100%); 
+    background: linear-gradient(0deg, rgba(182, 197, 242, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .dark .botGradi {
@@ -268,7 +288,11 @@ html {
 }
 
 .page2 .projetos {
-    padding: 5rem;
+    padding: 8rem; 
+}
+
+.projetos a {
+    text-decoration: none;
 }
 
 .projetos li:hover {
@@ -325,6 +349,11 @@ html {
     padding: 3.8rem;
 }
 
+.page3.dark h3 {
+    color: #ffffff;
+}
+
+
 .page3 .page3Content {
     display: flex;
 }
@@ -344,6 +373,10 @@ html {
     color: #456EBF;
 }
 
+.page3.dark .sobre p {
+    color: #B6C5F2;
+}
+
 .page3 img {
     margin-top: 60px;
     height: 250px;
@@ -359,6 +392,10 @@ html {
     color: #435373;
     width: 50%;
     line-height: 2;
+}
+
+.page3.dark .skills {
+    color: #4B75F2;
 }
 
 .page3 .skills ul {
@@ -377,12 +414,21 @@ html {
     color: #1848D9;
 }
 
+.valorSkill.dark {
+    color: #B6C5F2;
+}
+
 .page3 .barraSkill .html-bar::before, .css-bar::before, .js-bar::before, .linux-bar::before, .git-bar::before, .py-bar::before {
     content: '';
     display: block;
     height: 100%;
     background-color: #435373; 
     transition: width 0.3s ease-in-out;
+}
+
+.barraSkill.dark .html-bar::before, .barraSkill.dark .css-bar::before, .barraSkill.dark .js-bar::before, 
+.barraSkill.dark .linux-bar::before, .barraSkill.dark .git-bar::before, .barraSkill.dark .py-bar::before {
+    background-color: #4B75F2; 
 }
 
 .page3 .barraSkill .html-bar::before {
@@ -413,6 +459,10 @@ html {
     width: 100%;
     height: 320px;
     background: linear-gradient(0deg, #456EBF 0%, #435373 100%);
+}
+
+.page4.dark {
+    background: linear-gradient(0deg, #456EBF 0%, #4B75F2 100%);
 }
 
 
